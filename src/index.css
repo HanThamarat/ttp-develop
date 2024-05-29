@@ -1,8 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   background: #F5F5F5;
+}
+
+
+@layer base {
+  @font-face {
+    font-family: 'Roboto-Regular';
+    src: url(/fonts/Roboto-Regular.ttf) format('ttf');
+  }
+  
+  @font-face {
+    font-family: 'Roboto-Medium';
+    src: url(/fonts/Roboto-Medium.ttf) format('ttf');
+  }
+  
+  @font-face {
+    font-family: 'Roboto-Bold';
+    src: url(/fonts/Roboto-Bold.ttf) format('ttf');
+  }
 }

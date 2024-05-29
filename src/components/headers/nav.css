@@ -1,0 +1,6 @@
+#progressBar {
+    --progress: 0;
+    height: 5px;
+    width: var(--progress);
+    background-color: #2196F3;
+}
