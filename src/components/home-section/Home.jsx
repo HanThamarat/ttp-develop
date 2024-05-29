@@ -45,14 +45,14 @@ const Home = () => {
           </div>
         </div>
         <div className="mt-[15vh]">
-          <Cardfull transition='fade-left' duraion='1000'>
+          <Cardfull ohterStyle='xl:mx-[30px]' transition='fade-left' duraion='1000'>
             <div className="w-full flex justify-between gap-x-2">
               <button onClick={handleTapWeb} className={`w-full rounded-md ${WebBtn ? 'bg-primary text-white' : 'hover:bg-blue-400 hover:text-white'} duration-100 ease-in-out py-1 px-4`}>Web Development</button>
               <button onClick={handleTapApp} className={`w-full rounded-md  ${AppBtn ? 'bg-primary text-white' : 'hover:bg-blue-400 hover:text-white'} duration-100 ease-in-out py-1 px-4`}>App Development</button>
             </div>
-            <div id='sec-view'></div>
           </Cardfull>
         </div>
+        <div id='sec-view'></div>
     </div>
     </>
   )

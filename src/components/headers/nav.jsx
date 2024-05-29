@@ -1,6 +1,8 @@
 import Headroom  from 'react-headroom';
 import { useEffect } from 'react';
 import './nav.css';
+import Logo from '../../assets/image/logo.png';
+import LogoSm from '../../assets/image/logo-sm.png';
 
 const Navbar = () => {
 
@@ -22,7 +24,8 @@ const Navbar = () => {
       <Headroom>
         <nav className='bg-white px-[250px] py-[20px] flex justify-between items-center xl:px-[100px]'>
             <div className='text-[28px] font-rbc font-bold text-primary'>
-                <span>TTC Developer</span>
+                <img src={Logo} alt="" className='logo'/>
+                <img src={LogoSm} alt="" className='logo__sm'/>
             </div>
             <div>
                 <ul className='flex items-center gap-x-5 xl:invisible'>

@@ -12,3 +12,17 @@
     width: var(--progress);
     background-color: #2196F3;
 }
+
+.logo__sm {
+    display: none;
+}
+
+@media (max-width: 1279px) {
+    .logo {
+        display: none;
+    }
+
+    .logo__sm {
+        display: block;
+    }
+}
