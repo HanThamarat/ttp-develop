@@ -13,21 +13,21 @@ const Home = () => {
 
   const handleTapWeb = (e) => {
       e.preventDefault();
-      ReactDOM.render(<WebDev />, document.getElementById('sec-view'));
+      // ReactDOM.render(<WebDev />, document.getElementById('sec-view'));
       setWebbtn(true);
       setAppbtn(false);
   };
 
   const handleTapApp = (e) => {
       e.preventDefault();
-      ReactDOM.render(<AppDev />, document.getElementById('sec-view'));
+      // ReactDOM.render(<AppDev />, document.getElementById('sec-view'));
       setWebbtn(false);
       setAppbtn(true);
   };
 
-  useEffect(() => {
-    ReactDOM.render(<WebDev />, document.getElementById('sec-view'));
-  },[]);
+  // useEffect(() => {
+  //   ReactDOM.render(<WebDev />, document.getElementById('sec-view'));
+  // },[]);
 
   return (
     <>
@@ -60,4 +60,4 @@ const Home = () => {
 
 Aos.init();
 
-export default Home
+export default Home;
