@@ -3,11 +3,13 @@ import { useEffect } from 'react';
 import './nav.css';
 
 const Navbar = () => {
+
   const updateProgressBar = () => {
       const {scrollTop, scrollHeight} = document.documentElement;
       const scrollPercent = `${((scrollTop / (scrollHeight - window.innerHeight)) * 100)}` + '%';
       console.log(scrollPercent);
-      document.querySelector('#progressBar').style.setProperty('--progress', scrollPercent);
+      document.querySelector('#progressBarOnTop').style.setProperty('--progress', scrollPercent);
+      document.querySelector('#progressBarInnav').style.setProperty('--progress', scrollPercent);
   }
 
   useEffect(() => {
@@ -15,7 +17,9 @@ const Navbar = () => {
   },[]);
 
   return (
-    <Headroom>
+    <>
+      <div className='fixed w-full' id='progressBarOnTop'></div>
+      <Headroom>
         <nav className='bg-white px-[250px] py-[20px] flex justify-between items-center xl:px-[100px]'>
             <div className='text-[28px] font-rbc font-bold text-primary'>
                 <span>TTC Developer</span>
@@ -31,8 +35,9 @@ const Navbar = () => {
                 </ul>
             </div>
         </nav>
-        <div id='progressBar'></div>
+        <div id='progressBarInnav'></div>
     </Headroom>
+    </>
   );
 };
 

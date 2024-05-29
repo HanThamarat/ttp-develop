@@ -1,4 +1,12 @@
-#progressBar {
+#progressBarOnTop {
+    --progress: 0;
+    height: 4px;
+    width: var(--progress);
+    background-color: #2196F3;
+}
+
+
+#progressBarInnav {
     --progress: 0;
     height: 5px;
     width: var(--progress);

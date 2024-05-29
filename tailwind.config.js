@@ -12,6 +12,7 @@ export default {
           'cyber': '#5B58EB',
           'tropic': '#56E1E9',
           'merope': '#OA2353',
+          'ttow': '#212A37',
       },
       rotate: {
         '17': '182deg',
